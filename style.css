@@ -1,0 +1,30 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1.25fr 7fr;
+    grid-template-rows: 1fr 18.75fr;
+}
+
+
+.sidebar{
+    background-color: #5eead4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.sidebar ul{
+   list-style-type: none; 
+}
+
+.header{
+    background-color: white;
+    grid-area: 1 2 2 3;
+}
+
+.stage{
+    background-color: #e5e5e5;
+    grid-area: 2 2 3 3;
+}
