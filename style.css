@@ -9,15 +9,56 @@ body{
 
 .sidebar{
     background-color: #5eead4;
+    color: white;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 48px 1fr 1fr;
+    grid-gap: 6px;
+      
+}
+.head{
+    font-size: 1.5vw;
+    padding: 24px;
+    grid-row: 1 2;
+   
+   font-weight: 500;
+   display: flex;
+   align-items: center;
 }
 
-.sidebar ul{
-   list-style-type: none; 
+.dashicon{
+    height: 48px;
+    width: 48px;
 }
+
+.options{
+    font-size: 1vw;
+    padding: 24px;
+    grid-row: 2 3;
+   align-self: center;
+   justify-content: center;
+}
+
+.settings{
+    font-size: 1vw;
+    padding: 24px;
+    grid-row: 3 4;
+   align-self: center;
+   justify-content: center;
+}
+
+.options{
+    grid-row: 2 3;
+}
+
+.settings{
+    grid-row: 3 4;
+}
+
 
 .header{
     background-color: white;
