@@ -16,13 +16,13 @@ body{
     grid-row-end: 3;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 48px 1fr 1fr;
-    grid-gap: 6px;
+    grid-template-rows: 60px 216px 36px;
+    grid-gap: 100px;
       
 }
 .head{
-    font-size: 1.5vw;
-    padding: 24px;
+    font-size: 2.775vh;
+    padding: 36px;
     grid-row: 1 2;
    
    font-weight: 500;
@@ -31,24 +31,38 @@ body{
 }
 
 .dashicon{
-    height: 48px;
-    width: 48px;
+    height: 6vh;
 }
 
 .options{
-    font-size: 1vw;
-    padding: 24px;
+    font-size: 2vh;
     grid-row: 2 3;
-   align-self: center;
-   justify-content: center;
+    align-items: center;
 }
 
+.icon{
+    height: 3vh;
+    padding-right: 6px;
+}
+
+.opit{
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+
+.options ul{
+    list-style-type: none;
+}
+
+
+
+
 .settings{
-    font-size: 1vw;
-    padding: 24px;
+    font-size: 2vh;
     grid-row: 3 4;
-   align-self: center;
-   justify-content: center;
+    align-items: center;
 }
 
 .options{
@@ -61,11 +75,100 @@ body{
 
 
 .header{
+    padding: 12px;
+    position: relative;
+    z-index: 2;
     background-color: white;
     grid-area: 1 2 2 3;
+    box-shadow: 0px 5px 5px 0px gray;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topl{
+    
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+#searchbar{
+    margin-left: 6px;
+    background-color: #e5e5e5;
+    border: 0;
+    border-radius: 12px;
+}
+
+.topr{
+    display: flex;
+    align-items: center;
+}
+
+.bottom{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.bl{
+    display: flex;
+    align-items: center;
+}
+
+.br{
+    display: flex;
+    align-items: center;
+}
+
+.butt{
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 12px;
+    color: white;
+    background-color: aqua;
+    border-radius: 24px;
 }
 
 .stage{
     background-color: #e5e5e5;
     grid-area: 2 2 3 3;
+    padding: 12px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 70fr 30fr;
+    grid-template-rows: 2.5fr 97.5fr;
+}
+
+.cardsh{
+    grid-row-start:2 ;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 24px;
+    resize: both;
+    overflow: auto;
+    display: grid;
+    gap: 24px;
+    grid-template-rows: repeat(auto-fit, minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+}
+
+.card{
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 0px 12px 0px #888888;
+    
+    padding: 12px;
+    color: #e5e5e5;
+    border-radius: 12px;
+    background-color: white;
+    border-style: solid;
+    border-top: 24px;
+    border-right: 24px;
+    border-bottom:24px;
+    border-color: aquamarine;
 }
